@@ -1,0 +1,52 @@
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { display: inline-block; }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+
+$text: capitalize;
+$font: gibson light;
+
+div {
+  h4{
+    padding-left: 20px; 
+  }
+  ol {
+    font-family: $font;
+    font-size: 18px;
+  }
+    
+  li { text-transform: $text }
+      
+}
+
+%menu-shared  { 
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.85rem;
+  font-weight: 600; 
+  text-transform: uppercase;
+}
+
+.menu-category {
+  @extend %menu-shared;
+}
+
+.menu-breakfast {
+  @extend %menu-shared;
+  color: black; 
+}
+
+.menu-lunch {
+  @extend %menu-shared;
+  color: white; 
+}
